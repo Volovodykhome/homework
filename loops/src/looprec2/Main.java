@@ -7,14 +7,14 @@ public class Main {
 
     public static int stepen(double a){
         if(a==1){
-            return a;
+            return (int) a;
         }
-        return a % 10 + Nastya (a/10);
+        return (int) (a % 10 + stepen (a/10));
     }
     public static void main(String[] args) {
 
         System.out.println("Введите число");
         int a = tt.nextInt();
-        System.out.println ( a % 10 + Nastya (a/10));
+        System.out.println ( a % 10 + stepen (a/10));
     }
 }
