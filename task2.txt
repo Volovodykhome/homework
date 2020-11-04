@@ -1,0 +1,19 @@
+package loop_task2;
+
+import java.util.Scanner;
+
+public class Main {
+    static Scanner ff = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int num = 0;
+        for (int a = 0; a < 5; a++) {
+            System.out.println("введите оценку по " + (a + 1) + " экзамену");
+            int g = ff.nextInt();
+            if (g > 9) {
+                num++;
+            }
+            System.out.println("оценки больше 9 " + num);
+        }
+    }
+}
